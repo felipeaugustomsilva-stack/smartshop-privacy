@@ -1,4 +1,10 @@
-<title>Política de Privacidade — SmartShop</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — ShopNow</title>
+<meta name="description" content="Como o ShopNow coleta, usa e protege seus dados pessoais.">
 
 <style>
   :root {
@@ -207,62 +213,90 @@
     margin: 2.5rem 0;
   }
 </style>
-
+</head>
+<body>
 <div class="wrap">
 
   <div class="doc-header">
-    <div class="app-name">SmartShop</div>
+    <div class="app-name">ShopNow</div>
     <h1>Política de Privacidade</h1>
-    <p class="doc-meta">Última atualização: 16 de agosto de 2026</p>
+    <p class="doc-meta">Última atualização: 19 de setembro de 2026</p>
   </div>
 
   <div class="section">
-    <p>Esta Política de Privacidade descreve como o SmartShop coleta, usa e protege seus dados pessoais. Ao usar o aplicativo, você concorda com as práticas descritas aqui.</p>
+    <p>Esta Política de Privacidade descreve como o ShopNow coleta, usa e protege seus dados pessoais. Ao usar o aplicativo, você concorda com as práticas descritas aqui.</p>
   </div>
 
   <div class="section">
     <h2><span class="num">1</span> Quem somos</h2>
-    <p>O SmartShop é um aplicativo de gestão de listas de compra doméstica desenvolvido por <strong>Felipe Augusto Moreira da Silva</strong>. Para fins desta política, o desenvolvedor é o controlador dos dados pessoais coletados pelo aplicativo, conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+    <p>O ShopNow é um aplicativo de listas de compra domésticas desenvolvido por <strong>Felipe Augusto Moreira da Silva</strong>, que é o controlador dos dados pessoais tratados aqui, nos termos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+    <p>Contato: <a href="mailto:felipeaugusto.msilva@gmail.com">felipeaugusto.msilva@gmail.com</a></p>
   </div>
 
   <div class="section">
-    <h2><span class="num">2</span> Dados que coletamos</h2>
+    <h2><span class="num">2</span> Que dados tratamos</h2>
 
     <p class="sub">Dados de conta</p>
     <ul>
-      <li><strong>Nome completo</strong> — fornecido no cadastro, exibido para outros membros da sua casa</li>
-      <li><strong>Endereço de e-mail</strong> — usado para autenticação e recuperação de senha</li>
-      <li><strong>Telefone</strong> — opcional, não obrigatório para usar o aplicativo</li>
+      <li><strong>Nome</strong> — exibido para os outros membros da sua casa</li>
+      <li><strong>E-mail</strong> — usado para autenticação, confirmação de cadastro e recuperação de senha</li>
+      <li><strong>Telefone</strong> — opcional, não é necessário para usar o aplicativo</li>
+      <li><strong>Identificador interno da conta</strong>, gerado pelo Firebase Authentication</li>
+      <li><strong>Login social</strong> — se você entrar com Google ou Apple, recebemos desses serviços o nome e o e-mail da conta escolhida. Se usar o recurso "Ocultar meu e-mail" da Apple, recebemos o endereço de encaminhamento, não o seu e-mail real. <strong>Não recebemos sua senha</strong> do Google nem da Apple</li>
+      <li>A resposta opcional da pergunta "Como você conheceu o app?"</li>
     </ul>
 
-    <p class="sub">Dados de uso</p>
+    <p class="sub">Conteúdo que você cria no app</p>
     <ul>
-      <li>Listas de compra e seus itens (nome do produto, quantidade, unidade, observações)</li>
-      <li>Catálogo de produtos da casa</li>
-      <li>Informações de pertencimento a casas (papel: dono ou convidado, status de aprovação)</li>
+      <li>Casas, membros e papéis (dono ou convidado), e códigos de convite</li>
+      <li>Listas de compra e seus itens (nome do produto, quantidade, unidade, observação), catálogo de produtos da casa e marcações de "comprado"</li>
+      <li>CEPs salvos pela casa para entrega</li>
+      <li>Quando o agente de compras é usado: preferências aprendidas por item (marca, tipo, embalagem), o progresso da sessão e o resumo do que foi comprado (produto, preço e mercado)</li>
     </ul>
 
     <p class="sub">Dados técnicos</p>
     <ul>
-      <li><strong>Token de notificação push</strong> — gerado pelo sistema operacional, usado para enviar notificações sobre atividade no app; armazenado por dispositivo e removido automaticamente quando inválido</li>
+      <li><strong>Token de notificação</strong> do aparelho, gerado pelo Expo, usado para avisar você sobre pedidos de entrada, listas solicitadas e itens comprados</li>
+      <li>Qual casa está ativa na sua conta</li>
+      <li>Registros de funcionamento (logs) das funções no servidor, que não guardam o conteúdo das páginas nem os produtos</li>
     </ul>
-  </div>
 
-  <div class="section">
-    <h2><span class="num">3</span> Como usamos seus dados</h2>
-    <p>Seus dados são usados exclusivamente para:</p>
+    <p class="sub">Dados que ficam só no seu aparelho</p>
     <ul>
-      <li>Autenticar você no aplicativo e manter sua sessão ativa</li>
-      <li>Criar e gerenciar listas de compra colaborativas entre membros da mesma casa</li>
-      <li>Enviar notificações push sobre atividade relevante (novo membro solicitando entrada, lista de compra solicitada, item comprado)</li>
-      <li>Recuperar sua senha por e-mail quando solicitado</li>
+      <li>Sua sessão nos sites dos mercados (cookies e dados do site), quando você conecta uma conta de mercado. Ela fica no aparelho até você desconectar o mercado, sair do ShopNow ou excluir a conta — <strong>nós não recebemos esses dados</strong></li>
+      <li><strong>Sua senha do mercado e seus dados de pagamento nunca são lidos pelo aplicativo.</strong> O login e o pagamento acontecem no site do mercado, dentro de uma janela de navegação, e quem digita é você</li>
+      <li>A preferência de tema (claro ou escuro)</li>
     </ul>
-    <p>Não usamos seus dados para publicidade, venda a terceiros ou qualquer finalidade não descrita acima.</p>
   </div>
 
   <div class="section">
-    <h2><span class="num">4</span> Compartilhamento de dados</h2>
-    <p>Não vendemos seus dados pessoais. Compartilhamos apenas com os prestadores de serviço essenciais para o funcionamento do app:</p>
+    <h2><span class="num">3</span> Para que usamos</h2>
+    <ul>
+      <li>Autenticar você e manter a sessão ativa</li>
+      <li>Criar e sincronizar listas de compra entre os membros da mesma casa</li>
+      <li>Enviar notificações sobre a sua casa e as suas listas</li>
+      <li>Recuperar a senha por e-mail e confirmar a posse do e-mail no cadastro</li>
+      <li>Fazer funcionar o agente de compras, quando ele está liberado para você</li>
+    </ul>
+    <p>Não usamos seus dados para publicidade, não fazemos perfilamento para terceiros e <strong>não vendemos dados pessoais</strong>.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">4</span> O agente de compras</h2>
+    <p>O agente é um recurso opcional, liberado conta a conta. Quando você o usa:</p>
+    <ul>
+      <li><strong>Você navega no site do mercado dentro do aplicativo.</strong> O login é feito por você, na tela do próprio mercado; o app aproveita essa sessão enquanto o agente trabalha e <strong>para no pagamento</strong>, devolvendo o controle a você</li>
+      <li><strong>Enviamos um retrato da página para a Anthropic</strong> (empresa do modelo Claude, nos Estados Unidos), que decide o próximo passo da busca. Esse retrato tem o endereço da página, o título, o texto visível, a descrição dos elementos da página e a lista de produtos encontrados</li>
+      <li><strong>Antes de enviar, removemos o que tem forma de dado pessoal</strong>: e-mail, CPF, CNPJ, telefone, CEP e número de cartão são substituídos por marcadores. Campos de senha e de cartão nunca entram no retrato, e o app nunca lê o conteúdo digitado em campo nenhum. Um limite honesto: um nome próprio ou um endereço escrito por extenso na página podem passar, porque não têm forma reconhecível automaticamente</li>
+      <li><strong>Cookies, senhas e dados de pagamento nunca são enviados</strong> à Anthropic nem aos nossos servidores</li>
+      <li>O tratamento dos dados enviados segue também a política da Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></li>
+      <li><strong>Link de afiliado:</strong> quando ativado para um mercado, a sessão abre uma vez um link de afiliado daquele mercado antes de começar a busca. Isso informa ao mercado que a visita veio do ShopNow e pode gerar comissão. Nenhum dado seu é enviado nesse link</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">5</span> Com quem compartilhamos</h2>
+    <p>Não vendemos seus dados pessoais. Usamos os seguintes serviços para operar o aplicativo:</p>
     <table class="partners">
       <thead>
         <tr>
@@ -274,37 +308,53 @@
       <tbody>
         <tr>
           <td><strong>Google Firebase</strong></td>
-          <td>Banco de dados (Firestore) e autenticação</td>
-          <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com</a></td>
+          <td>Conta, banco de dados e servidor (banco e funções em São Paulo)</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com</a></td>
         </tr>
         <tr>
           <td><strong>Expo</strong></td>
-          <td>Infraestrutura de notificações push</td>
-          <td><a href="https://expo.dev/privacy" target="_blank">expo.dev/privacy</a></td>
+          <td>Geração do token e entrega das notificações</td>
+          <td><a href="https://expo.dev/privacy" target="_blank" rel="noopener">expo.dev/privacy</a></td>
         </tr>
         <tr>
-          <td><strong>Apple APNs</strong></td>
-          <td>Entrega de notificações push (iOS)</td>
-          <td><a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></td>
+          <td><strong>Anthropic</strong></td>
+          <td>Decisão do próximo passo do agente de compras (ver seção 4)</td>
+          <td><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></td>
         </tr>
         <tr>
-          <td><strong>Google FCM</strong></td>
-          <td>Entrega de notificações push (Android)</td>
-          <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com</a></td>
+          <td><strong>Apple</strong></td>
+          <td>Entrega de notificações (iOS) e login com Apple</td>
+          <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td>
+        </tr>
+        <tr>
+          <td><strong>Google</strong></td>
+          <td>Entrega de notificações (Android) e login com Google</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com</a></td>
+        </tr>
+        <tr>
+          <td><strong>Sites dos mercados</strong></td>
+          <td>Carrefour, Shopper, Mercado Livre e Pão de Açúcar — você navega e compra neles, dentro do app</td>
+          <td>Conforme cada empresa</td>
         </tr>
       </tbody>
     </table>
+    <p>Há <strong>transferência internacional</strong> de dados para os serviços acima sediados nos Estados Unidos, com base na execução do contrato com você (art. 33, II da LGPD). Também podemos compartilhar dados para cumprir obrigação legal ou ordem de autoridade competente.</p>
+    <p><strong>Outros membros da sua casa veem</strong> o seu nome e o que você escreve nas listas e no catálogo daquela casa. As notificações enviadas a eles podem conter esse texto.</p>
   </div>
 
   <div class="section">
-    <h2><span class="num">5</span> Armazenamento e retenção</h2>
-    <p>Seus dados são armazenados nos servidores do Firebase (Google), com sede nos EUA. O Firebase é certificado por padrões internacionais de segurança (ISO 27001, SOC 2/3).</p>
-    <p>Mantemos seus dados enquanto sua conta estiver ativa. Se você solicitar a exclusão da conta, removeremos seus dados em até <strong>30 dias</strong>, salvo onde a retenção for exigida por lei.</p>
+    <h2><span class="num">6</span> Armazenamento e retenção</h2>
+    <ul>
+      <li>Os dados ficam no Firebase, com banco em <strong>São Paulo</strong></li>
+      <li>Listas e catálogo ficam guardados enquanto a casa existir — não há expurgo automático nesta versão</li>
+      <li>O token de notificação deste aparelho é removido quando você sai da conta</li>
+      <li>Ao excluir a conta, apagamos o seu cadastro, os seus vínculos com as casas e o seu acesso em até <strong>30 dias</strong>, incluindo as cópias de segurança, salvo onde a retenção for exigida por lei</li>
+    </ul>
   </div>
 
   <div class="section">
-    <h2><span class="num">6</span> Seus direitos (LGPD)</h2>
-    <p>Como titular de dados pessoais, você tem os seguintes direitos garantidos pela LGPD:</p>
+    <h2><span class="num">7</span> Seus direitos (LGPD)</h2>
+    <p>Como titular de dados pessoais, você tem os seguintes direitos:</p>
     <div class="rights">
       <div class="right-item"><strong>Acesso</strong><span>Ver os dados que temos sobre você</span></div>
       <div class="right-item"><strong>Correção</strong><span>Corrigir dados incompletos ou incorretos</span></div>
@@ -313,32 +363,41 @@
       <div class="right-item"><strong>Oposição</strong><span>Opor-se a determinados tratamentos</span></div>
       <div class="right-item"><strong>Informação</strong><span>Saber com quem compartilhamos seus dados</span></div>
     </div>
-    <p>Para exercer qualquer desses direitos, entre em contato pelo e-mail indicado na seção 10.</p>
+    <p>Para exercer qualquer deles, escreva para o e-mail da seção 11; respondemos em até 15 dias.</p>
+    <p class="sub">Excluir a conta pelo aplicativo</p>
+    <p>Na aba Conta, toque em "Excluir conta". Você confirma com a sua senha, ou com o Google ou a Apple, conforme o jeito que entrou. Isso apaga a sua conta de acesso, o seu cadastro e os seus vínculos com as casas.</p>
+    <p>Duas coisas que essa exclusão <strong>não</strong> faz, de propósito:</p>
+    <ul>
+      <li><strong>Não apaga o conteúdo compartilhado</strong> (listas, itens e catálogo das casas), que continua como histórico para os outros membros. Esses registros guardam o identificador de quem criou cada item, não o seu nome</li>
+      <li><strong>Não deixa uma casa sem dono.</strong> Se você for o único dono de uma casa que ainda tem membros, transfira ou remova esses membros antes; o aplicativo avisa</li>
+    </ul>
+    <p>Se quiser também o apagamento do conteúdo compartilhado, peça por e-mail: é preciso combinar com os outros membros da casa.</p>
   </div>
 
   <div class="section">
-    <h2><span class="num">7</span> Segurança</h2>
+    <h2><span class="num">8</span> Segurança</h2>
     <p>Adotamos medidas técnicas para proteger seus dados, incluindo:</p>
     <ul>
-      <li>Autenticação segura via Firebase Authentication (e-mail verificado)</li>
-      <li>Regras de acesso ao banco de dados que garantem que cada usuário acessa apenas os dados das casas de que faz parte</li>
-      <li>Transmissão de dados via HTTPS/TLS em todos os pontos</li>
+      <li>Transmissão por HTTPS/TLS em todos os pontos</li>
+      <li>Autenticação pelo Firebase Authentication; senhas não são guardadas por nós</li>
+      <li>Regras de acesso no banco, testadas automaticamente, que limitam cada pessoa aos dados das casas de que participa</li>
+      <li>Limites de uso por conta nas funções que falam com a Anthropic</li>
     </ul>
-    <p>Nenhum sistema é 100% seguro. Em caso de incidente que afete seus dados, notificaremos os titulares e a autoridade competente conforme exigido pela LGPD.</p>
+    <p>Nenhum sistema é totalmente imune. Em caso de incidente com risco relevante, comunicaremos você e a autoridade competente (ANPD), como manda a LGPD.</p>
   </div>
 
   <div class="section">
-    <h2><span class="num">8</span> Menores de idade</h2>
-    <p>O SmartShop não é direcionado a menores de 13 anos e não coleta conscientemente dados de crianças. Se você acreditar que coletamos dados de um menor, entre em contato para que possamos removê-los imediatamente.</p>
+    <h2><span class="num">9</span> Menores de idade</h2>
+    <p>O ShopNow não é destinado a menores de 13 anos, e não coletamos dados dessa faixa conscientemente. Adolescentes entre 13 e 18 anos devem usar o aplicativo com o consentimento de um responsável. Se soubermos de um cadastro fora disso, apagamos. Se você acreditar que coletamos dados de uma criança, entre em contato.</p>
   </div>
 
   <div class="section">
-    <h2><span class="num">9</span> Alterações nesta política</h2>
+    <h2><span class="num">10</span> Alterações nesta política</h2>
     <p>Podemos atualizar esta política periodicamente. Quando houver alterações relevantes, notificaremos os usuários pelo e-mail cadastrado ou por aviso dentro do aplicativo, com pelo menos 15 dias de antecedência. A data de "última atualização" no topo deste documento é sempre revisada a cada alteração.</p>
   </div>
 
   <div class="section">
-    <h2><span class="num">10</span> Contato</h2>
+    <h2><span class="num">11</span> Contato</h2>
     <p>Para dúvidas, solicitações ou exercício dos seus direitos previstos na LGPD:</p>
     <div class="contact-block">
       <p><strong>Felipe Augusto Moreira da Silva</strong></p>
@@ -347,3 +406,5 @@
   </div>
 
 </div>
+</body>
+</html>
