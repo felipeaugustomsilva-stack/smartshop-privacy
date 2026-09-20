@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excluir conta — ShopNow</title>
+<meta name="description" content="Como excluir sua conta do ShopNow, o que é apagado e o que é mantido.">
+
+<style>
+  :root {
+    --bg: #F7F7FC;
+    --surface: #FFFFFF;
+    --border: #E3E3EE;
+    --text: #16152A;
+    --text-2: #64648A;
+    --accent: #4F46E5;
+    --accent-dim: #EEEEFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0D0D1A;
+      --surface: #16162A;
+      --border: #28284A;
+      --text: #E6E6F6;
+      --text-2: #8080A8;
+      --accent: #6366F1;
+      --accent-dim: #1A1A3A;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0D0D1A;
+    --surface: #16162A;
+    --border: #28284A;
+    --text: #E6E6F6;
+    --text-2: #8080A8;
+    --accent: #6366F1;
+    --accent-dim: #1A1A3A;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    padding: 3rem 1.5rem 5rem;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .doc-header {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .app-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-dim);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+  }
+  .doc-header h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    color: var(--text);
+  }
+  .doc-meta {
+    font-size: 0.85rem;
+    color: var(--text-2);
+    margin-top: 0.4rem;
+  }
+
+  /* Sections */
+  .section {
+    margin-bottom: 2.25rem;
+  }
+  .section h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.65rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+  .section h2 .num {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    background: var(--accent-dim);
+    color: var(--accent);
+    padding: 2px 7px;
+    border-radius: 999px;
+  }
+  .section p {
+    font-size: 0.95rem;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+  }
+  .section p:last-child { margin-bottom: 0; }
+
+  /* Lists */
+  ul, ol {
+    padding-left: 1.25rem;
+    margin: 0.5rem 0 0.75rem;
+  }
+  li {
+    font-size: 0.95rem;
+    color: var(--text);
+    margin-bottom: 0.3rem;
+    line-height: 1.65;
+  }
+  li strong { color: var(--text); font-weight: 600; }
+
+  /* Sub-heading inside section */
+  .sub {
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-2);
+    margin: 1rem 0 0.4rem;
+  }
+
+  /* Third-party table */
+  .partners {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+    overflow-x: auto;
+    display: block;
+  }
+  .partners th {
+    text-align: left;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-2);
+    padding: 6px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .partners td {
+    padding: 8px 12px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+  }
+  .partners tr:last-child td { border-bottom: none; }
+  .partners a { color: var(--accent); text-decoration: none; }
+  .partners a:hover { text-decoration: underline; }
+
+  /* Rights grid */
+  .rights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  .right-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.7rem 0.9rem;
+  }
+  .right-item strong {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 2px;
+  }
+  .right-item span {
+    font-size: 0.82rem;
+    color: var(--text-2);
+  }
+
+  /* Contact block */
+  .contact-block {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.1rem 1.3rem;
+    margin-top: 0.5rem;
+  }
+  .contact-block p {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+  .contact-block a { color: var(--accent); text-decoration: none; }
+  .contact-block a:hover { text-decoration: underline; }
+
+  /* Divider */
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.5rem 0;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="doc-header">
+    <div class="app-name">ShopNow</div>
+    <h1>Excluir sua conta e seus dados</h1>
+    <p class="doc-meta">Atualizado em 19 de setembro de 2026</p>
+  </div>
+
+  <div class="section">
+    <p>Esta página explica como pedir a exclusão da sua conta do ShopNow e o que acontece com os seus dados. Você pode fazer isso sozinho, dentro do aplicativo, ou por e-mail se não tiver mais o app instalado.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">1</span> Pelo aplicativo</h2>
+    <ol>
+      <li>Abra o ShopNow e vá até a aba <strong>Conta</strong></li>
+      <li>Toque em <strong>Excluir conta</strong></li>
+      <li>Confirme sua identidade: com a sua <strong>senha</strong>, ou com o <strong>Google</strong> ou a <strong>Apple</strong>, conforme o jeito que você usa para entrar</li>
+      <li>Confirme a exclusão</li>
+    </ol>
+    <p>A exclusão é imediata: ao terminar, sua conta de acesso deixa de existir e você é desconectado.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">2</span> Por e-mail, sem o aplicativo</h2>
+    <p>Se você desinstalou o app ou não consegue entrar, escreva para <a href="mailto:felipeaugusto.msilva@gmail.com?subject=Exclus%C3%A3o%20de%20conta%20ShopNow">felipeaugusto.msilva@gmail.com</a> com o assunto <strong>"Exclusão de conta ShopNow"</strong>, enviando <strong>do mesmo e-mail cadastrado no aplicativo</strong>.</p>
+    <p>Respondemos em até <strong>15 dias</strong> e concluímos a exclusão em até <strong>30 dias</strong>.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">3</span> O que é apagado</h2>
+    <ul>
+      <li>Sua <strong>conta de acesso</strong> (autenticação por e-mail e senha, Google ou Apple)</li>
+      <li>Seu <strong>cadastro</strong>: nome, e-mail, telefone, se preenchido, e o token de notificação dos seus aparelhos</li>
+      <li>Seus <strong>vínculos com as casas</strong>, incluindo o papel de dono ou convidado — você deixa de ter acesso a elas</li>
+      <li>No caso de uma casa que fique sem nenhum membro, também os códigos de convite dela</li>
+    </ul>
+    <p>Os dados são removidos dos nossos sistemas em até <strong>30 dias</strong>, incluindo as cópias de segurança, salvo onde a retenção for exigida por lei.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">4</span> O que é mantido, e por quê</h2>
+    <p>O conteúdo que você criou <strong>dentro de uma casa compartilhada</strong> — listas de compra, itens, catálogo de produtos e resumos de compra — continua existindo para os outros membros daquela casa, como histórico. Apagar esse conteúdo apagaria também o trabalho das outras pessoas.</p>
+    <p>Esses registros guardam apenas o identificador interno de quem criou cada item, não o seu nome nem o seu e-mail, que são apagados junto com o cadastro.</p>
+    <p>Se você quiser também a remoção desse conteúdo compartilhado, peça por e-mail: precisamos combinar isso com os outros membros da casa.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">5</span> Se você for o único dono de uma casa</h2>
+    <p>Para não deixar uma casa sem ninguém que possa administrá-la, a exclusão é recusada enquanto você for o <strong>único dono</strong> de uma casa que ainda tem outros membros. Nesse caso, o aplicativo avisa qual é a casa.</p>
+    <p>Para seguir, promova outro membro a dono ou remova os membros daquela casa, e tente de novo.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">6</span> Contas nos mercados</h2>
+    <p>Se você conectou contas de supermercado no aplicativo, elas ficam guardadas <strong>apenas no seu aparelho</strong> e são apagadas dele quando você sai do ShopNow ou exclui a conta. Sua conta no site do mercado não é afetada: ela pertence a você e àquela empresa, e continua existindo normalmente.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">7</span> Mais informações</h2>
+    <div class="contact-block">
+      <p>Política de Privacidade: <a href="../">felipeaugustomsilva-stack.github.io/smartshop-privacy</a></p>
+      <p>Contato: <a href="mailto:felipeaugusto.msilva@gmail.com">felipeaugusto.msilva@gmail.com</a></p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
