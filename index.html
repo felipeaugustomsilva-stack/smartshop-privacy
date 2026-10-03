@@ -220,7 +220,7 @@
   <div class="doc-header">
     <div class="app-name">ShopNow</div>
     <h1>Política de Privacidade</h1>
-    <p class="doc-meta">Última atualização: 29 de setembro de 2026</p>
+    <p class="doc-meta">Última atualização: 3 de outubro de 2026</p>
   </div>
 
   <div class="section">
@@ -259,6 +259,7 @@
     <ul>
       <li><strong>Token de notificação</strong> do aparelho, gerado pelo Expo, usado para avisar os donos da casa quando um membro solicita uma compra e para avisar você quando sua entrada numa casa é aprovada</li>
       <li>Qual casa está ativa na sua conta</li>
+      <li><strong>Verificação de autenticidade do aplicativo e do aparelho</strong> (Firebase App Check): ao se comunicar com os nossos servidores, o aplicativo pede à Apple (iOS) ou ao Google (Android) uma atestação de que é o ShopNow original, rodando num aparelho não adulterado, e envia ao Firebase o comprovante que recebe. O Firebase <strong>não guarda</strong> o material da atestação; o comprovante vale por um tempo limitado. Quem valida a atestação é a Apple ou o Google, conforme a política de cada um</li>
       <li>Registros de funcionamento (logs) das funções no servidor, que não guardam o conteúdo das páginas nem os produtos</li>
     </ul>
 
@@ -278,6 +279,7 @@
       <li>Avisar os donos quando uma compra é solicitada e o membro quando sua entrada é aprovada</li>
       <li>Recuperar a senha por e-mail e confirmar a posse do e-mail no cadastro</li>
       <li>Fazer funcionar o agente de compras, quando ele está liberado para você</li>
+      <li>Proteger o serviço contra uso indevido, confirmando que as requisições vêm do aplicativo ShopNow original</li>
     </ul>
     <p>Não usamos seus dados para publicidade, não fazemos perfilamento para terceiros e <strong>não vendemos dados pessoais</strong>.</p>
   </div>
@@ -324,12 +326,12 @@
         </tr>
         <tr>
           <td><strong>Apple</strong></td>
-          <td>Entrega de notificações (iOS) e login com Apple</td>
+          <td>Entrega de notificações (iOS), login com Apple e atestação de autenticidade do aplicativo (App Attest ou DeviceCheck)</td>
           <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td>
         </tr>
         <tr>
           <td><strong>Google</strong></td>
-          <td>Entrega de notificações (Android) e login com Google</td>
+          <td>Entrega de notificações (Android), login com Google e atestação de autenticidade do aplicativo (Play Integrity)</td>
           <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com</a></td>
         </tr>
         <tr>
