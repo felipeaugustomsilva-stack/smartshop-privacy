@@ -220,7 +220,7 @@
   <div class="doc-header">
     <div class="app-name">ShopNow</div>
     <h1>Política de Privacidade</h1>
-    <p class="doc-meta">Última atualização: 6 de outubro de 2026</p>
+    <p class="doc-meta">Última atualização: 9 de outubro de 2026</p>
   </div>
 
   <div class="section">
@@ -262,6 +262,12 @@
       <li><strong>Verificação de autenticidade do aplicativo e do aparelho</strong> (Firebase App Check): ao se comunicar com os nossos servidores, o aplicativo pede à Apple (iOS) ou ao Google (Android) uma atestação de que é o ShopNow original, rodando num aparelho não adulterado, e envia ao Firebase o comprovante que recebe. O Firebase <strong>não guarda</strong> o material da atestação; o comprovante vale por um tempo limitado. Quem valida a atestação é a Apple ou o Google, conforme a política de cada um</li>
       <li>Registros de funcionamento (logs) das funções no servidor, que não guardam o conteúdo das páginas nem os produtos</li>
     </ul>
+    <p class="sub">Dados de uso e de funcionamento</p>
+    <ul>
+      <li><strong>Dados de uso do app</strong> — registramos eventos de funcionamento, como a abertura do app, o início e o fim de uma sessão do agente de compras, o tempo de carregamento, os toques em links de parceiros, a quantidade de itens e o valor do carrinho. Esses eventos vão ligados a um <strong>identificador pseudônimo</strong> (um código que não é o seu nome, nem o seu e-mail, nem o identificador da sua conta, e que não dá para converter de volta sem uma chave secreta guardada só no nosso servidor) e à casa. <strong>Eles não incluem</strong> nomes de produtos, mensagens do chat, o conteúdo das páginas dos mercados nem endereço</li>
+      <li><strong>Relatórios de falha</strong> — quando o app trava ou encontra um erro, ele envia um relatório técnico pelo <strong>Firebase Crashlytics</strong> (Google): modelo do aparelho, versão do sistema e do app, o trecho do código onde o erro aconteceu e um código aleatório da instalação do app (que serve só para contar quantos aparelhos tiveram a mesma falha). O relatório vai <strong>sem identificar você</strong>: não mandamos nome, e-mail nem o identificador da sua conta. Quando a falha é do agente de compras, o relatório leva também o código da sessão do agente, o mercado e a etapa em que ela parou</li>
+      <li><strong>Uso de inteligência artificial</strong> — de cada chamada ao serviço de IA do agente, registramos só números: quantidade de tokens (o tamanho do pedido e da resposta), tempo de resposta e custo. <strong>O conteúdo</strong> do que foi enviado ou respondido <strong>não</strong> entra nesse registro</li>
+    </ul>
 
     <p class="sub">Dados que ficam só no seu aparelho</p>
     <ul>
@@ -280,7 +286,9 @@
       <li>Recuperar a senha por e-mail e confirmar a posse do e-mail no cadastro</li>
       <li>Fazer funcionar o agente de compras, quando ele está liberado para você</li>
       <li>Proteger o serviço contra uso indevido, confirmando que as requisições vêm do aplicativo ShopNow original</li>
+      <li>Com os dados de uso, os relatórios de falha e os números de uso de IA: corrigir erros, melhorar a estabilidade e o funcionamento do agente e medir o desempenho do produto e das parcerias com os mercados</li>
     </ul>
+    <p><strong>Base legal:</strong> o que é necessário para o app funcionar para você (conta, casas, listas, notificações e o agente) se apoia na execução do contrato (art. 7º, V, da LGPD). Os dados de uso, os relatórios de falha e os números de uso de IA se apoiam no nosso <strong>legítimo interesse</strong> (art. 7º, IX) de manter o app estável e entender como ele é usado; por isso eles são pseudonimizados ou anônimos, nunca levam o conteúdo das suas listas nem das suas conversas, e você pode se opor a eles pelo e-mail de contato.</p>
     <p>Não usamos seus dados para publicidade, não fazemos perfilamento para terceiros e <strong>não vendemos dados pessoais</strong>.</p>
   </div>
 
@@ -312,8 +320,13 @@
       <tbody>
         <tr>
           <td><strong>Google Firebase</strong></td>
-          <td>Conta, banco de dados e servidor (banco e funções em São Paulo)</td>
+          <td>Conta, banco de dados e servidor (banco e funções em São Paulo); guarda também os dados de uso pseudonimizados</td>
           <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com</a></td>
+        </tr>
+        <tr>
+          <td><strong>Firebase Crashlytics</strong> (Google)</td>
+          <td>Recebe e organiza os relatórios de falha do app, sem identificar você; atua como operador, só por nossa conta</td>
+          <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td>
         </tr>
         <tr>
           <td><strong>Expo</strong></td>
@@ -347,7 +360,7 @@
         </tr>
       </tbody>
     </table>
-    <p>Há <strong>transferência internacional</strong> de dados para os serviços acima que tratam dados nos Estados Unidos, com base na execução do contrato com você (art. 33, II da LGPD). Também podemos compartilhar dados para cumprir obrigação legal ou ordem de autoridade competente.</p>
+    <p>Há <strong>transferência internacional</strong> de dados para os serviços acima que tratam dados nos Estados Unidos, com base na execução do contrato com você (art. 33, IX, da LGPD). Também podemos compartilhar dados para cumprir obrigação legal ou ordem de autoridade competente.</p>
     <p><strong>Outros membros da sua casa veem</strong> o seu nome e o que você escreve nas listas e no catálogo daquela casa. As notificações enviadas a eles podem conter esse texto.</p>
   </div>
 
@@ -358,6 +371,8 @@
       <li>As mensagens enviadas ao e-mail de contato ficam na caixa do Zoho, nos <strong>Estados Unidos</strong>, pelo tempo necessário para responder e registrar o atendimento</li>
       <li>Listas e catálogo ficam guardados enquanto a casa existir — não há expurgo automático nesta versão</li>
       <li>O token de notificação deste aparelho é removido quando você sai da conta</li>
+      <li>Os <strong>dados de uso</strong> pseudonimizados ficam guardados por até <strong>13 meses</strong> (400 dias) e depois são apagados automaticamente. Se você excluir a conta antes disso, eles são apagados em até <strong>24 horas</strong> (ver seção 7)</li>
+      <li>Os <strong>relatórios de falha</strong> ficam no Crashlytics por <strong>90 dias</strong>, o prazo do próprio serviço</li>
       <li>Ao excluir a conta, apagamos o seu cadastro, os seus vínculos com as casas e o seu acesso em até <strong>30 dias</strong>, incluindo as cópias de segurança, salvo onde a retenção for exigida por lei</li>
     </ul>
   </div>
@@ -382,6 +397,7 @@
       <li><strong>Não deixa uma casa sem dono.</strong> Se você for o único dono de uma casa que ainda tem membros, transfira ou remova esses membros antes; o aplicativo avisa</li>
     </ul>
     <p>Se quiser também o apagamento do conteúdo compartilhado, peça por e-mail: é preciso combinar com os outros membros da casa.</p>
+    <p>A exclusão da conta apaga também os <strong>dados de uso</strong> ligados ao seu identificador pseudônimo, em até <strong>24 horas</strong>. A limpeza roda algumas horas depois da exclusão, de propósito, para alcançar também os últimos registros que o aparelho ainda tenha enviado. As cópias desses registros que ficam nos registros de funcionamento (logs) do servidor são apagadas automaticamente em até 30 dias. Os relatórios de falha não identificam você e expiram em 90 dias.</p>
   </div>
 
   <div class="section">
