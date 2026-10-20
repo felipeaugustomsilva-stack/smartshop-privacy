@@ -252,6 +252,8 @@
       <li>Casas, membros e papéis (dono ou convidado), e códigos de convite</li>
       <li>Listas de compra e seus itens (nome do produto, quantidade, unidade, observação), catálogo de produtos da casa e marcações de "comprado"</li>
       <li>CEPs salvos pela casa para entrega</li>
+      <li><strong>Listas de presentes</strong>: título e ocasião da lista, quem pode vê-la (todos da casa, somente os donos ou só você), o <strong>nome ou apelido das pessoas que vão receber presentes</strong>, os orçamentos, as ideias de presente, o produto escolhido (loja, link, título, foto e nome do vendedor, como a própria loja publica), o último preço consultado e quem marcou o presente como comprado, e quando. O nome da pessoa presenteada é um dado de <strong>outra pessoa</strong> que você nos informa: use só o necessário para se organizar (um apelido basta). Uma lista privada é vista só por você; uma lista "somente donos", só pelos donos da casa; uma lista "todos da casa", por todos os membros aprovados. A visibilidade pode ser ampliada depois, nunca reduzida</li>
+      <li><strong>Memória dos presentes</strong>: quando você escolhe um produto para um presente ou o marca como comprado, guardamos a loja, algumas palavras do nome do produto (como a marca e o tipo), a ideia do presente e onde o preço ficou em relação ao orçamento, em porcentagem — <strong>nunca o valor pago</strong>. Guardamos também as palavras que você pediu para evitar numa busca. Isso serve para mostrar primeiro as opções parecidas com as que você costuma escolher. Essa memória é <strong>só sua</strong>: os outros membros da casa, inclusive os donos, não a veem, e ela não muda a ordem das opções para eles</li>
       <li>Quando o agente de compras é usado: preferências aprendidas por item (marca, tipo, embalagem), o progresso da sessão (inclusive os produtos encontrados nos mercados, com nome, preço, link e o endereço da foto publicada pelo próprio mercado) e o resumo do que foi comprado (produto, preço e mercado)</li>
     </ul>
 
@@ -266,7 +268,7 @@
     <ul>
       <li><strong>Dados de uso do app</strong> — registramos eventos de funcionamento, como o cadastro (com a forma de entrada — e-mail, Google ou Apple — e a resposta de "Como você conheceu o app?", se você respondeu), a criação de uma casa, o pedido de entrada numa casa e a aprovação de membros, a abertura do app, a criação e a conclusão de listas, a adição de itens (e se o item veio do catálogo, foi digitado ou veio da lista anterior), a marcação de itens como comprados, o início e o fim de uma sessão do agente de compras, o tempo de carregamento, os toques em links de parceiros, a quantidade de itens e o valor do carrinho. Esses eventos vão ligados a um <strong>identificador pseudônimo</strong> (um código que não é o seu nome, nem o seu e-mail, nem o identificador da sua conta, e que não dá para converter de volta sem uma chave secreta guardada só no nosso servidor) e à casa. Para medir o uso desde o início do app, também copiamos para esses registros as <strong>datas</strong> em que casas, membros, listas e itens já existentes foram criados, ligadas ao mesmo identificador pseudônimo. <strong>Eles não incluem</strong> nomes de produtos, nomes de casas ou de pessoas, e-mail, telefone, mensagens do chat, o conteúdo das páginas dos mercados nem endereço</li>
       <li><strong>Relatórios de falha</strong> — quando o app trava ou encontra um erro, ele envia um relatório técnico pelo <strong>Firebase Crashlytics</strong> (Google): modelo do aparelho, versão do sistema e do app, o trecho do código onde o erro aconteceu e um código aleatório da instalação do app (que serve só para contar quantos aparelhos tiveram a mesma falha). O relatório vai <strong>sem identificar você</strong>: não mandamos nome, e-mail nem o identificador da sua conta. Quando a falha é do agente de compras, o relatório leva também o código da sessão do agente, o mercado e a etapa em que ela parou</li>
-      <li><strong>Uso de inteligência artificial</strong> — de cada chamada ao serviço de IA do agente, registramos só números: quantidade de tokens (o tamanho do pedido e da resposta), tempo de resposta e custo. <strong>O conteúdo</strong> do que foi enviado ou respondido <strong>não</strong> entra nesse registro</li>
+      <li><strong>Uso de inteligência artificial</strong> — de cada chamada ao serviço de IA do agente e da ajuda da lista de presentes, registramos só números: quantidade de tokens (o tamanho do pedido e da resposta), tempo de resposta e custo. <strong>O conteúdo</strong> do que foi enviado ou respondido <strong>não</strong> entra nesse registro</li>
     </ul>
 
     <p class="sub">Dados que ficam só no seu aparelho</p>
@@ -282,6 +284,8 @@
     <ul>
       <li>Autenticar você e manter a sessão ativa</li>
       <li>Criar e sincronizar listas de compra entre os membros da mesma casa</li>
+      <li>Organizar listas de presentes, mostrar o orçamento, o valor previsto e o que já foi comprado, e consultar o preço do produto escolhido na loja quando você pede. O nome das pessoas presenteadas e os produtos <strong>não</strong> entram nos dados de uso</li>
+      <li>Com a memória dos presentes, ordenar as opções de presente pelo que você costuma escolher e dar essas pistas à ajuda da IA</li>
       <li>Avisar os donos quando uma compra é solicitada e o membro quando sua entrada é aprovada</li>
       <li>Recuperar a senha por e-mail e confirmar a posse do e-mail no cadastro</li>
       <li>Fazer funcionar o agente de compras, quando ele está liberado para você</li>
@@ -303,6 +307,13 @@
       <li><strong>Cookies, senhas e dados de pagamento nunca são enviados</strong> à Anthropic nem aos nossos servidores</li>
       <li>O tratamento dos dados enviados segue também a política da Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></li>
       <li><strong>Link de afiliado:</strong> quando ativado para um mercado, a sessão abre uma vez um link de afiliado daquele mercado antes de começar a busca. Isso informa ao mercado que a visita veio do ShopNow e pode gerar comissão. Nenhum dado seu é enviado nesse link</li>
+    </ul>
+    <p><strong>Ajuda da IA na lista de presentes.</strong> Quando você usa o "Refinar" da busca de um presente ou conversa sobre o presente:</p>
+    <ul>
+      <li><strong>Enviamos à Anthropic</strong> (empresa do modelo Claude, nos Estados Unidos) a ideia do presente, o orçamento, o que você escreveu, as opções que estão na tela (nome do produto, loja e preço), as últimas mensagens da conversa e, se houver, um resumo da sua memória dos presentes (lojas e palavras que você costuma escolher). A resposta é um novo termo de busca ou uma mensagem curta</li>
+      <li><strong>O nome da pessoa presenteada não é enviado.</strong> O app não manda esse campo, e um primeiro nome comum que você escreva no texto é trocado por "[nome]" antes do envio. Um limite honesto: um nome raro escrito por extenso pode passar</li>
+      <li><strong>Nada disso fica guardado no nosso servidor</strong>: a conversa fica só no seu aparelho, e o servidor só conta quantas vezes a ajuda foi usada, para os limites de uso</li>
+      <li>O tratamento dos dados enviados segue também a política da Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></li>
     </ul>
   </div>
 
@@ -335,7 +346,7 @@
         </tr>
         <tr>
           <td><strong>Anthropic</strong></td>
-          <td>Decisão do próximo passo do agente de compras (ver seção 4)</td>
+          <td>Decisão do próximo passo do agente de compras e ajuda da IA na lista de presentes (ver seção 4)</td>
           <td><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></td>
         </tr>
         <tr>
@@ -370,6 +381,8 @@
       <li>Os dados ficam no Firebase, com banco em <strong>São Paulo</strong></li>
       <li>As mensagens enviadas ao e-mail de contato ficam na caixa do Zoho, nos <strong>Estados Unidos</strong>, pelo tempo necessário para responder e registrar o atendimento</li>
       <li>Listas e catálogo ficam guardados enquanto a casa existir — não há expurgo automático nesta versão</li>
+      <li>Listas de presentes ficam guardadas até serem apagadas por quem as criou ou, se essa pessoa sair da casa, por um dono da casa. Ao excluir a conta, as suas listas de presentes <strong>privadas</strong> são apagadas, com as pessoas e os presentes; as listas "todos da casa" e "somente donos" continuam na casa, como as listas de compra. Não guardamos histórico de preço: cada consulta substitui a anterior</li>
+      <li>A memória dos presentes guarda as suas últimas 50 escolhas por casa (as mais antigas saem) e fica até você apagá-la ou excluir a conta</li>
       <li>O token de notificação deste aparelho é removido quando você sai da conta</li>
       <li>Os <strong>dados de uso</strong> pseudonimizados ficam guardados por até <strong>13 meses</strong> (400 dias) e depois são apagados automaticamente. Se você excluir a conta antes disso, eles são apagados em até <strong>24 horas</strong> (ver seção 7)</li>
       <li>Os <strong>relatórios de falha</strong> ficam no Crashlytics por <strong>90 dias</strong>, o prazo do próprio serviço</li>
