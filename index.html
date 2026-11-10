@@ -253,7 +253,7 @@
       <li>Listas de compra e seus itens (nome do produto, quantidade, unidade, observação), catálogo de produtos da casa, a lista de recorrência da casa (itens fixos, com quantidade e unidade) e marcações de "comprado"</li>
       <li>CEPs salvos pela casa para entrega</li>
       <li><strong>Listas de presentes</strong>: título e ocasião da lista, quem pode vê-la (todos da casa, somente os donos ou só você), o <strong>nome ou apelido das pessoas que vão receber presentes</strong>, os orçamentos, as ideias de presente, o produto escolhido (loja, link, título, foto e nome do vendedor, como a própria loja publica), o último preço consultado, quem marcou o presente como comprado, e quando, e o <strong>preço que você disser ter pago</strong>, se informar ao marcar como comprado (é opcional), e o <strong>cupom ou desconto</strong> que você informar para o produto escolhido — só o valor em reais ou a porcentagem, nunca o código do cupom —, com quem informou, visto por quem vê a lista e apagado quando o produto é trocado. O nome da pessoa presenteada é um dado de <strong>outra pessoa</strong> que você nos informa: use só o necessário para se organizar (um apelido basta). Uma lista privada é vista só por você; uma lista "somente donos", só pelos donos da casa; uma lista "todos da casa", por todos os membros aprovados. A visibilidade pode ser ampliada depois, nunca reduzida</li>
-      <li><strong>Listas de material escolar</strong>: a <strong>escola</strong> (o nome e, quando escolhida da base do INEP, o código da escola e do município), a <strong>série</strong>, o <strong>ano letivo</strong>, uma cor para diferenciar listas parecidas, a data de início das aulas, se você informar, quem pode ver a lista (todos da casa, somente os donos ou só você; a visibilidade pode ser ampliada depois, nunca reduzida) e os itens (nome, quantidade, especificação, matéria, marca preferida, se é só aquela marca e se é material de uso coletivo). Em cada item, o estado: pendente, <strong>"Eu compro"</strong> (quem vê a lista vê o seu nome de membro da casa), comprado (com quem marcou e, se você informar, o preço pago e a loja) ou "já tenho". <strong>A lista não guarda nenhum dado do aluno</strong>: nem nome, nem apelido, nem idade</li>
+      <li><strong>Listas de material escolar</strong>: a <strong>escola</strong> (o nome e, quando escolhida da nossa base de escolas, o código da escola e do município), a <strong>série</strong>, o <strong>ano letivo</strong>, uma cor para diferenciar listas parecidas, a data de início das aulas, se você informar, quem pode ver a lista (todos da casa, somente os donos ou só você; a visibilidade pode ser ampliada depois, nunca reduzida) e os itens (nome, quantidade, especificação, matéria, marca preferida, se é só aquela marca e se é material de uso coletivo). Em cada item, o estado: pendente, <strong>"Eu compro"</strong> (quem vê a lista vê o seu nome de membro da casa), comprado (com quem marcou e, se você informar, o preço pago e a loja) ou "já tenho". <strong>A lista não guarda nenhum dado do aluno</strong>: nem nome, nem apelido, nem idade</li>
       <li><strong>Memória dos presentes</strong>: quando você escolhe um produto para um presente ou o marca como comprado, guardamos a loja, algumas palavras do nome do produto (como a marca e o tipo), a ideia do presente e onde o preço ficou em relação ao orçamento, em porcentagem — <strong>nunca o valor pago</strong>. Guardamos também as palavras que você pediu para evitar numa busca. Isso serve para mostrar primeiro as opções parecidas com as que você costuma escolher. Essa memória é <strong>só sua</strong>: os outros membros da casa, inclusive os donos, não a veem, e ela não muda a ordem das opções para eles. Você pode apagá-la a qualquer momento em <strong>Conta › Preferências › Esquecer minhas escolhas de presentes</strong>, o que a apaga em todas as suas casas; as listas, as pessoas e os presentes continuam</li>
       <li><strong>Lembretes de presentes</strong>: depois da sua primeira lista de presentes, o app pergunta se você quer lembretes de Black Friday e Natal. Nada vem marcado, e a permissão de notificação do aparelho só é pedida se você responder "Sim, quero". Guardamos a sua resposta (sim ou não) na sua conta, e você pode mudar quando quiser em Conta › Preferências. Desligar a lista de presentes nas Preferências também desliga os lembretes. Mandamos no máximo 3 lembretes por semana, nunca entre 22h e 8h, só nas datas de Black Friday e Natal, e eles nunca levam o nome das pessoas presenteadas</li>
       <li><strong>Preferências guardadas só no aparelho</strong>: quais tipos de lista aparecem (mercado, presentes), quais destaques de campanha você fechou, em quais lojas a busca de presentes procura e como você prefere comprar um presente (aqui no app ou no site ou app da loja) ficam no próprio aparelho, não vão para os nossos servidores e não mudam nada para os outros membros da casa</li>
@@ -283,6 +283,16 @@
       <li>Sua sessão nas lojas da busca de presentes (Mercado Livre, Carrefour, Amazon, Magazine Luiza e Shopee), quando a loja pede que você entre na sua conta ou faça uma verificação e você faz isso na tela dela, dentro do app, e os cookies que a própria loja grava nessa visita (inclusive o que marca a visita como vinda do ShopNow, abaixo). Ela fica no aparelho até você sair do ShopNow, excluir a conta ou outra pessoa entrar no ShopNow neste aparelho — <strong>nós não recebemos esses dados</strong></li>
       <li>A preferência de tema (claro ou escuro)</li>
     </ul>
+
+    <p class="sub">Escolas que enviam a lista de material pelo site</p>
+    <p>A página <strong>shopnowapp.com.br/escolas/</strong> recebe, sem cadastro, a lista de material de uma escola. Tratamos:</p>
+    <ul>
+      <li>O <strong>e-mail de quem envia</strong> (para avisar que recebemos, confirmar que o endereço é da escola e dizer se a lista foi publicada ou recusada, com o motivo) e a <strong>escola, a série e o ano letivo</strong> informados</li>
+      <li>Os <strong>arquivos enviados</strong> (até 3 fotos ou PDFs). Pedimos que não tragam nome de aluno nem de outra pessoa</li>
+      <li>Para limitar envios repetidos, um <strong>código derivado do endereço IP e do e-mail</strong>, que não permite voltar a eles; o IP em si não é guardado nem enviado a terceiros</li>
+      <li>Cada arquivo é conferido por uma pessoa da equipe do ShopNow <strong>antes</strong> de qualquer leitura automática. Só depois dessa aprovação o arquivo é lido pela IA da Anthropic, que transforma a lista em itens; a equipe confere os itens antes de publicar</li>
+      <li>A <strong>lista publicada</strong> tem só a escola, a série, o ano letivo e os itens. Ela fica pública em um link do site para a escola divulgar às famílias, e pode ser usada no app. O e-mail de quem enviou <strong>nunca</strong> é publicado</li>
+    </ul>
   </div>
 
   <div class="section">
@@ -292,6 +302,7 @@
       <li>Criar e sincronizar listas de compra entre os membros da mesma casa</li>
       <li>Organizar listas de presentes, mostrar o orçamento, o valor previsto e o que já foi comprado, e consultar o preço do produto escolhido na loja quando você pede. O nome das pessoas presenteadas e os produtos <strong>não</strong> entram nos dados de uso</li>
       <li>Organizar as listas de material escolar, dividir quem compra cada item entre as pessoas da casa e mostrar o que falta</li>
+      <li>Receber, conferir e publicar as listas de material enviadas pelas escolas, e responder a quem enviou</li>
       <li>Com a memória dos presentes, ordenar as opções de presente pelo que você costuma escolher e dar essas pistas à ajuda da IA</li>
       <li>Avisar os donos quando uma compra é solicitada e o membro quando sua entrada é aprovada</li>
       <li>Se você pediu, mandar lembretes de Black Friday e Natal ligados às suas listas de presentes</li>
@@ -366,7 +377,7 @@
         </tr>
         <tr>
           <td><strong>Anthropic</strong></td>
-          <td>Decisão do próximo passo do agente de compras e ajuda da IA na lista de presentes (ver seção 4)</td>
+          <td>Decisão do próximo passo do agente de compras, ajuda da IA na lista de presentes (ver seção 4) e leitura das listas de material enviadas pelas escolas, só depois de aprovadas por uma pessoa da equipe</td>
           <td><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></td>
         </tr>
         <tr>
@@ -381,8 +392,13 @@
         </tr>
         <tr>
           <td><strong>Zoho</strong></td>
-          <td>Caixa do e-mail de contato (contato@shopnowapp.com.br): recebe e guarda as mensagens que você nos envia</td>
+          <td>Caixa do e-mail de contato (contato@shopnowapp.com.br): recebe e guarda as mensagens que você nos envia e envia os avisos às escolas que mandam a lista de material</td>
           <td><a href="https://www.zoho.com/privacy.html" target="_blank" rel="noopener">zoho.com/privacy</a></td>
+        </tr>
+        <tr>
+          <td><strong>Cloudflare</strong></td>
+          <td>Verificação contra robôs (Turnstile) na página de envio das escolas: roda no navegador de quem envia, e a Cloudflare recebe os dados técnicos dessa visita para decidir se é uma pessoa</td>
+          <td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></td>
         </tr>
         <tr>
           <td><strong>Sites dos mercados</strong></td>
@@ -404,6 +420,7 @@
       <li><strong>Listas de compra apagadas</strong>: o dono da casa pode apagar uma lista de compra concluída. Ela deixa de aparecer para todos da casa, mas <strong>continua guardada</strong> e só o dono a vê, em Conta › Listas apagadas, de onde pode restaurá-la. Para que uma lista apagada seja removida de vez, peça por e-mail</li>
       <li>Listas de presentes ficam guardadas até serem apagadas por quem as criou ou, se essa pessoa sair da casa, por um dono da casa. Ao excluir a conta, as suas listas de presentes <strong>privadas</strong> são apagadas, com as pessoas e os presentes; as listas "todos da casa" e "somente donos" continuam na casa, como as listas de compra. Não guardamos histórico de preço: cada consulta substitui a anterior</li>
       <li>Listas de material escolar ficam guardadas até serem apagadas por quem as criou ou, se essa pessoa sair da casa, por um dono da casa. Ao excluir a conta, as suas listas escolares <strong>privadas</strong> são apagadas, com os itens; as outras continuam na casa, e os itens com "Eu compro" no seu nome voltam a ficar livres</li>
+      <li><strong>Envios das escolas</strong>: o e-mail de quem enviou e os arquivos são apagados em <strong>30 dias</strong> se o e-mail não for confirmado e o envio não for decidido; nos outros casos, <strong>180 dias</strong> depois da confirmação ou da decisão (publicar ou recusar). A qualquer momento, quem enviou pode pedir a exclusão por e-mail. A lista publicada (só escola, série, ano e itens) fica no ar até a escola pedir para tirar. O código que limita envios repetidos é apagado em até 2 dias</li>
       <li>A memória dos presentes guarda as suas últimas 50 escolhas por casa (as mais antigas saem) e fica até você apagá-la (Conta › Preferências) ou excluir a conta</li>
       <li>A sua resposta aos lembretes de presentes fica na sua conta até você mudá-la ou excluir a conta</li>
       <li>O token de notificação deste aparelho é removido quando você sai da conta</li>
@@ -454,7 +471,7 @@
   <div class="section">
     <h2><span class="num">9</span> Menores de idade</h2>
     <p>O ShopNow não é destinado a menores de 13 anos, e não coletamos dados dessa faixa conscientemente. Adolescentes entre 13 e 18 anos devem usar o aplicativo com o consentimento de um responsável. Se soubermos de um cadastro fora disso, apagamos. Se você acreditar que coletamos dados de uma criança, entre em contato.</p>
-    <p>As <strong>listas de material escolar</strong> não pedem nem guardam dados do aluno: só a escola, a série, o ano letivo e os itens.</p>
+    <p>As <strong>listas de material escolar</strong> não pedem nem guardam dados do aluno: só a escola, a série, o ano letivo e os itens. As listas enviadas pelas escolas passam pela conferência de uma pessoa da equipe antes de serem lidas e publicadas; arquivo com nome de aluno não é publicado assim.</p>
   </div>
 
   <div class="section">
